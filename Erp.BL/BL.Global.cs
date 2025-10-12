@@ -1,0 +1,12 @@
+﻿global using Erp.Core.Constants;
+global using Microsoft.AspNetCore.Identity;
+global using Microsoft.EntityFrameworkCore;
+global using Erp.BL.SevicesBL;
+global using static Erp.Core.Enums.EnumHelper;
+global using Erp.Application.IUnitOfWork;
+global using Erp.Core.Entities.Seeding;
+global using System.Web.Mvc;
+global using Erp.Application.ViewModels;
+global using Erp.Core.Entities.Inventory;
+global using Erp.Core.Entities.Hierarchy;
+global using Erp.Dtos.FormsDtos;

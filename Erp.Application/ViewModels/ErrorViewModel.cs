@@ -1,4 +1,4 @@
-namespace Erp.Infrastructure.ViewModels
+namespace Erp.Application.ViewModels
 {
     public class ErrorViewModel
     {

@@ -21,7 +21,7 @@ namespace Erp.Core.Entities.Purchasing
         public virtual Employee? Employee { get; set; }
         public int BranchId { get; set; }
         [ForeignKey(nameof(BranchId))]
-        public virtual Brand? Branch { get; set; }
+        public virtual Branch? Branch { get; set; }
         public int PaymentMethodId { get; set; }
         [ForeignKey(nameof(PaymentMethodId))]
         public virtual PaymentMethod? PaymentMethod { get; set; }

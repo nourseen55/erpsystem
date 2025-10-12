@@ -13,6 +13,9 @@ global using Erp.Core.Entities.Purchasing;
 global using Erp.Core.Entities.Sales;
 global using Erp.Core.Entities.Seeding;
 global using System.Reflection;
+global using Erp.Application.IUnitOfWork;
+global using Erp.Infrastructure.Services;
+
 
 
 

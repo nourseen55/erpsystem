@@ -1,0 +1,99 @@
+﻿
+body {
+    font-family: "Cairo", sans-serif;
+    background-color: #f8f9fa;
+}
+
+.small-input {
+    font-size: 0.95rem;
+    padding: 0.55rem 0.9rem;
+}
+
+.card {
+    background: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+    .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+.form-check-input {
+    width: 2.2em;
+    height: 1.3em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.active-switch:checked {
+    background-color: #0d6efd !important;
+    border-color: #0d6efd !important;
+}
+
+.inactive-switch:checked {
+    background-color: #dc3545 !important;
+    border-color: #dc3545 !important;
+}
+
+.table {
+    border-radius: 12px !important;
+    overflow: hidden;
+}
+
+    .table thead {
+        background-color: sienna !important;
+        color: white;
+    }
+    .table thead th {
+        color:aliceblue
+    }
+        /*    .table tbody tr:hover {
+        background-color: #f9f3ef;
+        transition: all 0.2s;
+    }
+*/
+        button .btn:hover {
+    transform: scale(1.04);
+}
+
+.dataTables_length select {
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 6px 30px 6px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+    position: relative;
+    background-image: none;
+}
+
+.dataTables_length {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+/*    .dataTables_length::after {
+        content: "▼";
+        font-size: 12px;
+        color: #555;
+        position: absolute;
+        right: 10px;
+        pointer-events: none;
+    }
+*/
+    .dataTables_length label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+.dataTables_wrapper .dataTables_length select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 3px rgba(13, 110, 253, 0.5);
+    outline: none;
+}

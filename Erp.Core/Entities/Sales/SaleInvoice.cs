@@ -20,7 +20,7 @@ namespace Erp.Core.Entities.Sales
         public virtual Employee? Employee { get; set; }
         public int BranchId { get; set; }
         [ForeignKey(nameof(BranchId))]
-        public virtual Brand? Branch { get; set; }
+        public virtual Branch? Branch { get; set; }
 
         public int PaymentMethodId { get; set; }
         [ForeignKey(nameof(PaymentMethodId))]

@@ -10,8 +10,8 @@ namespace Erp.Infrastructure.Configurations.Purchasing
             builder.Property(e => e.PurchaseInvoiceKey).IsRequired().HasMaxLength(256);
             builder.Property(e => e.PurchaseInvoiceDate).IsRequired().HasColumnType("datetime");
             builder.Property(e => e.SystemDate).IsRequired().HasColumnType("datetime").HasDefaultValueSql("GETDATE()");
-            builder.Property(e => e.BeforeDiscount).HasColumnType("decimal(18,2)").HasDefaultValue(0); builder.Property(e => e.Discount).HasColumnType("decimal(18,2)").HasDefaultValue(0);
-            builder.Property(e => e.TotalAmount).HasColumnType("decimal(18,2)").HasDefaultValue(0);
+            builder.Property(e => e.BeforeDiscount).HasColumnType("decimal(18,2)").HasDefaultValue(0m); builder.Property(e => e.Discount).HasColumnType("decimal(18,2)").HasDefaultValue(0);
+            builder.Property(e => e.TotalAmount).HasColumnType("decimal(18,2)").HasDefaultValue(0m);
             builder.Property(e => e.TotalWritten).IsRequired().HasMaxLength(500);
 
             builder.HasOne(p => p.Supplier).

@@ -13,7 +13,7 @@ namespace Erp.Infrastructure.Configurations.Purchasing
             builder.Property(e => e.Name).IsRequired().HasMaxLength(256);
             builder.Property(e => e.PhoneNumber).IsRequired().HasMaxLength(25);
             builder.Property(e => e.Email).IsRequired().HasMaxLength(100);
-            builder.Property(e => e.FirstBalance).HasColumnType("decimal(18,2)").HasDefaultValue(0);
+            builder.Property(e => e.FirstBalance).HasColumnType("decimal(18,2)").HasDefaultValue(0m);
             builder.HasOne(p => p.Branch)
                 .WithMany(p => p.Suppliers)
                 .HasForeignKey(p => p.BranchId)

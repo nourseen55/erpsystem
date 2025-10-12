@@ -10,6 +10,8 @@ namespace Erp.Infrastructure.Data
         }
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            base.OnModelCreating(builder); 
+
             builder.HasSequence<int>("UserId").StartsAt(1).IncrementsBy(1);
             builder.Entity<Employee>().Property(e => e.UserId).HasDefaultValueSql("NEXT VALUE FOR UserId");
             builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
@@ -39,5 +41,7 @@ namespace Erp.Infrastructure.Data
         public DbSet<Currency> Currencies { get; set; }
         public DbSet <PaymentMethod >PaymentMethods { get; set; }
         public DbSet<Unit> Units { get; set; }
+        public DbSet<CategoryTest> CategoryTests { get; set; }
+        public DbSet<BrandTest> BrandTests { get; set; }
     }
 }

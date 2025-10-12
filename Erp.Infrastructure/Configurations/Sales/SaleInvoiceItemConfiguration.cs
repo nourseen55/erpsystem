@@ -8,8 +8,8 @@ namespace Erp.Infrastructure.Configurations.Sales
         {
             builder.ToTable("SaleInvoiceItems", "Sales");
             builder.Property(e => e.Quantity).IsRequired().HasDefaultValue(1);
-            builder.Property(e => e.UnitPrice).IsRequired().HasColumnType("decimal(18,2)").HasDefaultValue(0);
-            builder.Property(e => e.Total).IsRequired().HasColumnType("decimal(18,2)").HasDefaultValue(0);
+            builder.Property(e => e.UnitPrice).IsRequired().HasColumnType("decimal(18,2)").HasDefaultValue(0m);
+            builder.Property(e => e.Total).IsRequired().HasColumnType("decimal(18,2)").HasDefaultValue(0m);
             builder.HasOne(p => p.Product).
             WithMany(p => p.SaleInvoicesItems).
             HasForeignKey(p => p.ProductId).

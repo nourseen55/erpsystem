@@ -8,9 +8,9 @@ namespace Erp.Infrastructure.Configurations.Accounting
         {
             builder.ToTable("SupplierAccounts", "Accounting");
             builder.Property(e => e.ItemType).IsRequired().HasMaxLength(256);
-            builder.Property(e => e.Creditor).HasColumnType("decimal(18,2)").HasDefaultValue(0);
-            builder.Property(e => e.Debtor).HasColumnType("decimal(18,2)").HasDefaultValue(0);
-            builder.Property(e => e.Total).HasColumnType("decimal(18,2)").HasDefaultValue(0);
+            builder.Property(e => e.Creditor).HasColumnType("decimal(18,2)").HasDefaultValue(0m);
+            builder.Property(e => e.Debtor).HasColumnType("decimal(18,2)").HasDefaultValue(0m);
+            builder.Property(e => e.Total).HasColumnType("decimal(18,2)").HasDefaultValue(0m);
             builder.HasOne(p => p.Supplier)
             .WithMany(p => p.SupplierAccounts)
             .HasForeignKey(p => p.SupplierId)

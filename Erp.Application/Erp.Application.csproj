@@ -7,11 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Erp.Core\Erp.Core.csproj" />
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.3.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="IUnitOfWork\" />
+    <ProjectReference Include="..\Erp.Core\Erp.Core.csproj" />
   </ItemGroup>
 
 </Project>

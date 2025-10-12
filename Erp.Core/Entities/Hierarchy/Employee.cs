@@ -10,7 +10,7 @@ namespace Erp.Core.Entities.Hierarchy
         public bool IsUser { get; set; }
         public string? ImagePath { get; set; }
         public string? Signature { get; set; }
-        public int? BranchId { get; set; }
+        public int BranchId { get; set; }
         public int? DepartmentId { get; set; }
         [ForeignKey("DepartmentId")]
         public virtual Department? Department { get; set; }

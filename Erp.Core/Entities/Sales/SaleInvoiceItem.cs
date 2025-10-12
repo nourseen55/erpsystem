@@ -7,7 +7,7 @@ namespace Erp.Core.Entities.Sales
 
         public int SaleInvoiceId { get; set; }
         [ForeignKey(nameof(SaleInvoiceId))]
-        public SaleInvoice? SaleInvoice { get; set; }
+        public virtual SaleInvoice? SaleInvoice { get; set; }
 
         public int ProductId { get; set; }
         [ForeignKey(nameof(ProductId))]
