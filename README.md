@@ -1,0 +1,1 @@
+This project is developed using **ASP.NET MVC** and follows a **Clean Architecture** approach. It incorporates the **Service Pattern** and **Unit of Work** for structured and maintainable code. The project also features **DataTables** integration for efficient data display and includes **sample seed data** to facilitate testing and demonstration.
